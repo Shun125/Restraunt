@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Sora:wght@300;800&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background:linear-gradient(45deg, rgb(235, 146, 44), rgb(198, 82, 62));
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0 2rem;
+  } 
+
+  #app {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  thead th {
+    border-bottom: 2px solid #0099e4; /*#d31c4a */
+    color: #fff;
+  }
+  th,
+  th {
+    padding: 0 8px;
+    line-height: 40px;
+  }
+  thead th.id {
+    width: 50px;
+  }
+  thead th.state {
+    width: 100px;
+  }
+  thead th.button {
+    width: 60px;
+  }
+  tbody td.button, tbody td.state {
+    text-align: center;
+  }
+  tbody tr td,
+  tbody tr th {
+    border-bottom: 1px solid #ccc;
+    transition: all 0.4s;
+  }
+  tbody tr.done td,
+  tbody tr.done th {
+    background: #f8f8f8;
+    color: #bbb;
+  }
+  tbody tr:hover td,
+  tbody tr:hover th {
+    background: #3a3d3e;
+  }
+  button {
+    border: none;
+    border-radius: 20px;
+    line-height: 24px;
+    padding: 0 8px;
+    background: #0099e4;
+    color: #fff;
+    cursor: pointer;
+  }
